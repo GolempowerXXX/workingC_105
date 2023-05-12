@@ -1,0 +1,13 @@
+body{
+    background: linear-gradient(#e66465, #9198e5);
+    color:yellow;
+}
+h1{
+    background-color: lightblue;
+    padding: 10px;
+}
+#webcam{
+    border: 3px dotted blue;
+    width: 550px;
+    height: 400px;
+}

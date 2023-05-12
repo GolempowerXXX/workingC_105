@@ -1,0 +1,53 @@
+<html>
+  <head>
+    <title>Family member recogniser</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"> </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+   <link rel="stylesheet" href="style.css">
+  
+  </head>
+
+  <body>
+  <div class="container">
+    
+  <center> 
+    <h1>Family Member Recogniser</h1>
+    <br>
+    <h2>
+    Model is trained to Identify the following Members of family:
+    </h2>
+    <br> <h3>Mother | Father | Sister | Brother </h3>
+    <br>
+    <p>Webcam View - </p>
+    <br>
+    <div id="webcam"> </div>
+    <br>
+    <p>Snapshot:</p>
+    <br>
+    <div id="snapshot"> </div>
+    <br>
+    <button id="capture_image" onclick="capture_image()" class="btn btn-primary">Capture Image</button>
+    <br>
+    <br>
+    <button id="identify_image" onclick="check()" class="btn btn-success">Identify Image</button>
+    <br>
+    <br>
+    <label> member :<span id="member"></span> </label>
+    <br>
+    <br>
+    <label>Accuracy : <span id="accuracy"></span></label>
+    <br>
+    <br>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnzvYHU6OuU8neqZ4daEz4d61YWiTksMJgH5imCMIjaw&s">
+  </center>
+
+  </div>
+<script src="main.js"></script>
+
+  </body>
+</html>
